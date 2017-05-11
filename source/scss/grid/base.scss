@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row:after {
+	content: "";
+	display: table; /*Mudar forma do objeto para tabela.*/
+	clear: both; /*Vai limpar os floats.*/
+}
+
+.col { /*Estrutura base*/
+	position: relative;
+	min-height: 1px;
+	float: left;
+	padding: 1px 20px;
+}
+
+.item {
+	background-color: orange;
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+}
